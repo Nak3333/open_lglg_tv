@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 80%);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 10px;
+}
+
+#container {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  padding: 30px 20px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(10px);
+}
+
+h1 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #333;
+  line-height: 1.4;
+}
+
+img {
+  width: 80px;
+  height: 80px;
+  vertical-align: middle;
+  margin-left: 10px;
+}
+
+button {
+  border: none;
+  width: 100px;
+  border-radius: 12px;
+  font-size: 1.2rem;
+  padding: 12px 0;
+  cursor: pointer;
+  color: #fff;
+  margin: 12px;
+  transition: transform 0.3s ease, background-color 0.3s;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+#yes {
+  background-color: #28a745;
+  
+}
+
+#target {
+  background-color: #dc3545;
+  position: absolute;
+  top: 72%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+}
+
+.yes-button {
+  background-color: green;
+  color: white;
+  width: 100px;
+  padding: 12px 20px;
+  text-decoration: none;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+
+/* Responsive Styles */
+@media (max-width: 500px) {
+  h1 {
+    font-size: 1.4rem;
+  }
+
+  img {
+    width: 60px;
+    height: 60px;
+  }
+
+  button {
+    width: 90px;
+    font-size: 1rem;
+    padding: 10px 0;
+  }
+
+  #target {
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+    margin-bottom: 10px;
+    display: block;
+  }
+
+  #yes {
+    display: block;
+    margin: 0 auto;
+  }
+}
